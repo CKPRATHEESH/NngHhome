@@ -1,0 +1,8 @@
+<ul class="nav nav-tabs">
+<li class="nav-item" *ngFor="let item of content" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+
+<a class="nav-link" [routerLink]="item.link">{{item.text}}</a>
+
+  </li>
+</ul>
+ <router-outlet></router-outlet>
